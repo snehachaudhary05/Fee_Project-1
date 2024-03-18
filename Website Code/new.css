@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    background: black;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    flex: 2;
+    margin-left:6% ;
+  } 
+  .header-content{
+    display: flex;
+    margin-right: 6%;
+  }
+  .header-content ul{
+    display: flex;
+    list-style: none; 
+  } 
+  .header-content li{
+    margin-right: 20px;
+  }
+  .header-content a{
+    text-decoration: none;
+    color: white;
+  }
+  @media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-content {
+        margin-top: 10px;
+        padding-left:6%
+    } 
+    .header-content ul {
+        flex-direction: column;
+    } 
+    .header-content li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+  }
+  .box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(images/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  
+  }
+  .box1-left{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .box1-left-text{
+    margin: 2%;
+  }
+  .box1-left-button{
+    width: 100px;
+    height: 30px;
+    margin: 2%;
+    background: transparent;
+    border: solid 2px white;
+    color: white;
+  }
+  .box1-right{
+    width: 320px;
+    height: 300px;
+    /* padding: 3%; */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border-radius: 10px;
+  }
+  .box1-right-heading{
+    text-align: center;
+    background: #f5f5f5;
+    padding: 2%;
+    margin: 1%;
+  } 
+  .box1-right-input{
+    padding: 2%;
+  } 
+  .box1-right-input input{
+    margin: 2%;
+    padding: 3%;
+    width: 85%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #aeadad;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+  } 
+  .box1-right-input input::placeholder{
+    color: #e2e2e2;
+    font-size: 16px;
+  } 
+  .box1-right-button{
+    width: 100%;
+    margin-top: 5%;
+    height: 50px;
+    background-color: #fa8838;
+    color: white;
+  } 
+  @media screen and (max-width: 900px){
+    .box1{
+      flex-direction: column;
+    } 
+    .box1-left{
+      margin: 4%;
+    } 
+    .box1-right{
+      margin: 4%;
+    }
+  }
+  .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10%;
+  } 
+  .box-one{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  } 
+  .box-one button{
+    height: 60px;
+    border: solid 2px #5b5b5b;
+    background: #333333;
+    color: white;
+    font-size: 16px;
+  }
+  .box-two{
+    display: flex;
+    flex-direction: column;
+  } 
+  .box-two-heading{
+    margin-bottom: 2%; 
+  }
+  .box-two-text{
+    margin: 2%;
+    color: #c2c2c3;
+  }
+  .box-two-button{
+    width: 100px;
+    height: 40px;
+    margin: 2%;
+    background: #fa883f;
+    color: white;
+    border-radius: 3px;
+  }
+  .box-two-image{
+    width: 400px;
+    height: 200px;
+  } 
+  @media screen and (max-width: 1330px){
+    .box-two-image{
+      display: none;
+    }  
+  }
+  @media screen and (max-width: 820px){
+    .box-two{
+      font-weight: 300;
+    }
+  }
+  @media screen and (max-width: 780px){
+    .box2{
+    flex-direction: column;
+    }
+    .box-one{
+      margin-bottom: 4%;
+    }
+  }  
+#box-three-image{
+  width: 10%;
+  height: 10%;
+}
+.box-three{
+  margin-left:55%;
+  margin-top: -30%;
+}
+.box-three-image{
+  padding:8%;
+}
+#three-image-circle-one{
+  margin-left:-7%;
+  transform: translateY(94%);
+}
+#three-image-one{
+  margin-left:-4.6%;
+  transform: translateY(150%);
+}
+#three-image-circle-two{
+  margin-left:-10%;
+  transform:translate(60%,90%);
+}
+#three-images-two{
+  margin-left:-1%;
+  transform:translateY(130%)
+}
+#box-four{
+  padding:15%;
+  height:50rem;
+}
+#image-four{
+  margin-left:60%;
+  transform:translateY(-60%);
+}
+#text-five{
+  text-align:center;
+}
+.social-media{
+  height:500rem;
+}
+#box-five{
+  height:30rem;
+}
+#social{
+  margin-left:10%;
+  padding:1%
+}
+#social-photos{
+  margin-left:50%;
+  height:3rem;
+  transform:translateY(-80%)
+}
+#image-social{
+  padding-top:3%
+}
+#well-crafted{
+  text-align: center;
+  transform:translateY(-70%);
+}
+#thoughtful-design{
+  text-align: left;
+  padding-left: 2%;
+  transform:translateY(35%);
+}
+#easy-customize{
+  text-align: right;
+  padding-right: 1%;
+  transform:translateY(-170%);
+}
+#customers{
+  height:30rem;
+}
+#customer{
+  text-align:center;
+}
+#testimonials-one{
+  text-align: left;
+  padding-left: 8%;
+  transform:translateY(50%);
+}
+#testimonials-two{
+  text-align:center;
+  transform:translateY(-55%);
+}
+#testimonials-three{
+  text-align: right;
+  padding-right: 8%;
+  transform:translateY(-160%);
+}
+#what{
+  font-size:25px;
+}
+#stylishs{
+  background:url(images/custom_panel.jpg);
+  background-color: #333333;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#axure{
+  color: #c2c2c3;
+  font-size:30px;
+  padding: 30%;
+  text-align: center;
+  padding-top: 40%;
+}
+#axure-text{
+  color:white;
+}
+#stylish{
+  text-align:center;
+  padding-top: 4%;
+}
+#axure-button{
+  border: 2px solid white;
+  color:white;
+  background-color: transparent;
+}
+#professional{
+  text-align:center;
+  padding-bottom: 15%;
+  margin-left:10%;
+  transform:translateY(-60%)
+}
+#basic{
+  padding-left:2%;
+  margin-left:3%;
+  transform:translateY(20%)
+}
+#enterprise{
+  margin-left:75%;
+  transform:translateY(-230%); 
+}
+#pricing{
+  padding:9%;
+  height:50rem;
+}
+#pricing-text{
+  text-align:center;
+}
+#pricing-heading{
+  font-size:20px;
+}
+@media screen and (max-width: 1330px){
+  #image-social{
+    display:block;
+    margin-right: 100%;
+  }
+}
+@media screen and (max-width: 820px){
+  #social{
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 1330px){
+  #four-image{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 820px){
+  #text-four{
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 820px){
+  #heading{
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 1330px){
+  #img-divider{
+    display:block;
+  }
+}
+@media screen and (max-width: 1330px){
+  #thoughtful-design{
+    display:flex;
+    flex-direction: column;
+    padding-top:0%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #well-crafted{
+    display:flex;
+    flex-direction:column;
+    padding-top:202%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #easy-customize{
+    display:flex;
+    flex-direction: column;
+    padding-top:100%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 820px){
+  #customers{
+    padding-top:140%;
+  }
+}
+@media screen and (max-width: 820px){
+  #pricing{
+    padding-top:290%;
+    padding-bottom:350%
+  }
+}
+@media screen and (max-width: 1330px){
+  #testimonials-one{
+    display:flex;
+    flex-direction: column;
+    padding-top:1%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #testimonials-two{
+    display:flex;
+    flex-direction: column;
+    padding-top:170%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #testimonials-three{
+    display:flex;
+    flex-direction: column;
+    padding-top:-1%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 820px){
+  #heading-five{
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 820px){
+  #lorem-five{
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 820px){
+  #box-text{
+    font-weight: 300;
+    display:flex;
+    flex-direction: column;
+    padding-top:25%
+  }
+}
+@media screen and (max-width: 820px){
+  #three-image{
+    font-weight: 300;
+    margin-right:-150% 
+  }
+}
+@media screen and (max-width: 820px){
+  #three-image-two{
+    font-weight: 300;
+    margin-right:-150%;
+  }
+}
+@media screen and (max-width: 1330px){
+  #basic{
+    display:flex;
+    flex-direction: column;
+    padding-top:1%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #professional{
+    display:flex;
+    flex-direction: column;
+    padding-top:360%;
+    height:2px;
+  }
+}
+@media screen and (max-width: 1330px){
+  #enterprise{
+    display:block;
+    margin-top:160%;
+    margin-left:10%
+  }
+}
+@media screen and (max-width: 820px){
+  #stylish{
+    font-weight: 300;
+    margin-right:10%;
+  }
+}
+#contact{
+  text-align:center;
+}
+.box-content{
+     border:none;
+}
+#name-contact{
+  height:4rem;
+  width:40rem;
+  margin-left:10%;
+  border-bottom: 1px solid black; /* You can adjust the color and thickness of the underline here */
+  outline: none; /* Removes the default input field outline */   
+}
+#email-contact{
+  height:4rem;
+  margin-left:10%;
+  width:40rem;
+  margin-left:10%;
+  border-bottom: 1px solid black; /* You can adjust the color and thickness of the underline here */
+  outline: none;
+}
+#password-contact{
+  height:3rem;
+  margin-left:10%;
+  width:40rem;
+  margin-left:10%;
+  border-bottom: 1px solid black; /* You can adjust the color and thickness of the underline here */
+  outline: none;
+}
+#message-contact{
+  height:4rem;
+  width:40rem;
+  margin-left:60%;
+  border-bottom: 1px solid black; /* You can adjust the color and thickness of the underline here */
+  outline: none;
+}
+footer{
+   background: url(images/Footer\ Panel.png);
+}
+#social-footer{
+  margin-left:25%;
+}
+#footer-image{
+  padding-top:2%;
+}
+@media screen and (max-width: 1330px) {
+  #footer-image {
+    max-width:2%;
+    width:100px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  #message-contact{
+    margin-left:10%
+  }
+}
